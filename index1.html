@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="dice">
+           
+            <div class="two"><img src="https://chslovo.com/wp-content/uploads/2019/09/3-1.jpg"></div>
+            <div class="three"><img src="http://classroomclipart.com/images/gallery/Clipart/Numbers/number_three_cartoon.jpg"></div>
+            <div class="four"><img src="https://tse2.mm.bing.net/th?id=OIP.Mcc4aed0987b8f42a6e415242cace6452H0&pid=15.1&P=0&w=300&h=300"></div>
+            <div class="five"><img src="http://thumbs.dreamstime.com/z/funny-cartoon-numbers-5-13023225.jpg"></div>
+            <div class="six"><img src="http://elblogdelamariona.files.wordpress.com/2011/03/gif_1249-cartoon-character-happy-numbers-6.jpg"></div>
+        </div>
+    </div>
+    
+    
+  <style>
+body {padding:0;margin:0;}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	perspective: 800px;
+	background: #010101;
+}
+img {
+	width: 200px;
+  height: 200px;
+}
+.dice {
+	font-size: 3em;
+	color: white;
+	text-align: center;
+	padding-top: 150px;
+	margin: 0 auto;
+	height: 200px;
+	width: 200px;
+	transform-style: preserve-3d;
+	opacity: .8;
+	animation: turn 9s infinite linear;
+}
+
+@keyframes turn {
+	from {transform: rotateY(0) rotateX(0);}
+	to {transform: rotateY(-360deg) rotateX(360deg);}
+}
+
+.dice > div {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+}
+
+.dice:hover > div {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.one {
+	transform: rotateX(90deg) translateZ(100px);
+	background-color: #ff3333;
+}
+
+.two {
+	transform: translateZ(100px);
+	background-color: #33ff33;
+}
+
+.three {
+	transform: rotateY(90deg) translateZ(100px);
+	background-color: #3333ff;
+}
+
+.four {
+	transform: rotateY(180deg) translateZ(100px);
+	background-color: #ff3333;
+}
+
+.five {
+	transform: rotateY(-90deg) translateZ(100px);
+	background-color: #ffbb33;
+}
+
+.six {
+	transform: rotateX(-90deg) translateZ(100px);
+	background-color: #bbff33;
+}
+
+    </style>
+</body>
+</html>
